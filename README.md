@@ -43,19 +43,6 @@ Most of what I know came from building real projects outside the classroom.
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![Rishita's GitHub Stats](https://github-readme-stats.vercel.app/api?username=RISHITASHARMA01&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RISHITASHARMA01&layout=donut&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=RISHITASHARMA01&theme=dark&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=ff6b6b)
-
-</div>
-
----
 
 ## 🏆 Certifications
 
