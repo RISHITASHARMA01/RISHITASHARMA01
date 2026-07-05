@@ -1,188 +1,78 @@
-# 🔐 Python VPN — Built from Scratch
+# Hi, I'm Rishita Sharma 👋
 
-A VPN (Virtual Private Network) implementation built from scratch using Python.
-Demonstrates AES-256-CBC encryption, HMAC integrity verification, and secure
-tunneling — all explained in beginner-friendly code comments.
-
-> Built for learning and portfolio purposes. Not for production use.
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Cybersecurity+Student;Network+Security+Enthusiast;Python+Developer;Ethical+Hacking+Learner" alt="Typing SVG" />
+</div>
 
 ---
 
-## 🤔 What is a VPN?
+## 👩‍💻 About Me
 
-```
-WITHOUT VPN:
-Your Computer ──────────────────────────→ Internet
-              (anyone can see your data!)
+Cybersecurity student pursuing B.Tech in Computer Science.
+I focus on **network security**, **threat detection**, and building **security tools from scratch**.
+Most of what I know came from building real projects outside the classroom.
 
-WITH VPN:
-Your Computer → [AES-256 ENCRYPTED TUNNEL] → VPN Server → Internet
-              (data looks like random noise to anyone watching)
-```
-
----
-
-## 🔐 How Encryption Works (Simply)
-
-```
-Your Data: "GET /index.html HTTP/1.1 Host: google.com"
-     ↓
-[AES-256 Encryption with 256-bit key]
-     ↓
-Encrypted: "a3f9b2c8d4e1f6a7b3c9d5e2f8a4b1c7d6e3f9a2b5c8d4..."
-     ↓
-[Send through network — looks like random noise!]
-     ↓
-[VPN Server decrypts with same key]
-     ↓
-Original: "GET /index.html HTTP/1.1 Host: google.com"
-```
+- 🔐 **Interests:** Network Security, Ethical Hacking, Threat Detection, Cryptography
+- 🛠️ **Building:** Security tools using Python, Scapy, Streamlit
+- 📜 **Certifying:** IBM Cybersecurity Fundamentals · Google Cybersecurity Certificate
+- 🌍 **Location:** India
+- 📫 **Contact:** sharmarishita0111@gmail.com
 
 ---
 
-## 🛡️ Security Features
+## 🚀 Featured Projects
 
-| Feature | Implementation | Purpose |
+| Project | Description | Tech |
 |---|---|---|
-| Encryption | AES-256-CBC | Makes data unreadable |
-| Key Exchange | Encrypted with shared secret | Secure session key transfer |
-| Integrity | HMAC-SHA256 | Detects tampering |
-| Forward Secrecy | Random session key per connection | Past sessions stay safe |
+| [🔍 Packet Sniffer](https://github.com/RISHITASHARMA01/packet-sniffer) | Real-time network traffic analyzer with credential detection | Scapy, Streamlit |
+| [🛡️ NIDS](https://github.com/RISHITASHARMA01/nids) | Network Intrusion Detection System with email alerts | Scapy, Python |
+| [🔐 Python VPN](https://github.com/RISHITASHARMA01/vpn) | VPN built from scratch with AES-256-CBC encryption | Python, Cryptography |
+| [📋 Log Analyzer](https://github.com/RISHITASHARMA01/log-analyzer) | Detects brute force, user enumeration, sudo abuse in logs | Python, SQLite |
+| [🤖 Claude CLI](https://github.com/RISHITASHARMA01/claude-cli) | AI-powered cybersecurity assistant in the terminal | Python, Anthropic API |
+| [📚 Cyber Cheatsheets](https://github.com/RISHITASHARMA01/cybersecurity-cheatsheets) | Beginner-friendly cybersecurity cheatsheets | Markdown |
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Skills & Tools
 
-```
-python-vpn/
-├── crypto.py         # AES-256 encryption + HMAC (fully explained)
-├── server.py         # VPN server — receives and decrypts packets
-├── client.py         # VPN client — encrypts and sends packets
-├── demo.py           # Visual demo of encryption working
-├── requirements.txt  # Python dependencies
-└── README.md
-```
+[![My Skills](https://skillicons.dev/icons?i=python,linux,bash,git,github,vscode,sqlite,html,css)](https://skillicons.dev)
+
+**Security Tools:** Nmap · Wireshark · Scapy · Metasploit · Burp Suite  
+**Python Libraries:** Scapy · Streamlit · Pandas · Plotly · Cryptography · Socket  
+**Concepts:** AES-256 · HMAC · TCP/IP · IDS/IPS · Log Analysis · Threat Detection
 
 ---
 
-## ⚙️ Setup
+## 📊 GitHub Stats
 
-```bash
-# Install dependencies
-pip3 install -r requirements.txt --break-system-packages
-```
+<div align="center">
 
----
+![Rishita's GitHub Stats](https://github-readme-stats.vercel.app/api?username=RISHITASHARMA01&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&count_private=true)
 
-## ▶️ Usage
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RISHITASHARMA01&layout=donut&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff)
 
-### Step 1 — Run the Demo (see encryption in action)
-```bash
-python3 demo.py
-```
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=RISHITASHARMA01&theme=dark&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=ff6b6b)
 
-### Step 2 — Start the VPN Server
-```bash
-# Terminal 1
-python3 server.py
-```
-
-### Step 3 — Connect the VPN Client
-```bash
-# Terminal 2 — Interactive mode (type your own messages)
-python3 client.py
-
-# Terminal 2 — Auto demo mode
-python3 client.py demo
-```
-
-### Step 4 — Test the Encryption Module
-```bash
-python3 crypto.py
-```
+</div>
 
 ---
 
-## 🖥️ Example Output
+## 🏆 Certifications
 
-**Server:**
-```
-============================================================
-   🔐 Python VPN Server
-============================================================
-   Listening on : 127.0.0.1:5555
-   Encryption   : AES-256-CBC + HMAC-SHA256
-
-  [+] Client connected: 127.0.0.1:54321
-  [✓] Session key received: a3f9b2c8d4e1f6a7...
-  [✓] Secure tunnel established!
-
-  [10:30:15] Packet #1
-  Encrypted size : 96 bytes
-  Decrypted size : 42 bytes
-  Content        : Hello VPN Server! This is encrypted.
-```
-
-**Client:**
-```
-  [*] Connecting to VPN server 127.0.0.1:5555...
-  [✓] TCP connection established
-  [✓] VPN Tunnel established!
-  [✓] All traffic is now AES-256 encrypted
-
-  VPN> Hello, internet!
-  Original  : Hello, internet!
-  Encrypted : a3f9b2c8d4e1f6a7b3c9d5e2f8a4b1c7...
-  Size      : 16 → 64 bytes (encrypted)
-```
+- 📜 IBM Cybersecurity Fundamentals — IBM SkillsBuild *(in progress)*
+- 📜 Google Cybersecurity Certificate — Coursera *(in progress)*
 
 ---
 
-## 🧠 Key Concepts Explained in Code
+## 🌐 Connect With Me
 
-### AES-256-CBC Encryption (`crypto.py`)
-- How AES block cipher works
-- What CBC (Cipher Block Chaining) mode does
-- Why we need an IV (Initialization Vector)
-- How PKCS7 padding works
-
-### HMAC Integrity (`crypto.py`)
-- What HMAC-SHA256 is
-- How it detects packet tampering
-- Why we verify before decrypting
-
-### Session Keys (`client.py`)
-- What Perfect Forward Secrecy means
-- Why we use two keys (shared secret + session key)
-- How the handshake works
+[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://linkedin.com/in/rishita-sharma)
+[![GitHub](https://skillicons.dev/icons?i=github)](https://github.com/RISHITASHARMA01)
 
 ---
 
-## 💼 Resume Bullet Points
-
-- Built a VPN from scratch using Python sockets with AES-256-CBC encryption
-- Implemented HMAC-SHA256 for packet integrity verification
-- Designed secure key exchange using encrypted session keys
-- Demonstrated Perfect Forward Secrecy with per-connection random session keys
-- Added multi-client support using Python threading
-
----
-
-## 🛠️ Tech Stack
-
-`Python 3` · `cryptography` · `socket` · `threading` · `AES-256-CBC` · `HMAC-SHA256`
-
----
-
-## ⚠️ Disclaimer
-
-This VPN is built for **educational purposes** to understand how VPNs work internally.
-It is **not production-ready** — use WireGuard or OpenVPN for real privacy needs.
-
----
-
-## 👩‍💻 Author
-
-**Rishita Sharma**
-- GitHub: [@RISHITASHARMA01](https://github.com/RISHITASHARMA01)
-- Email: sharmarishita0111@gmail.com
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=RISHITASHARMA01&color=58a6ff&style=flat" alt="Profile Views" />
+  
+  ⭐ **If you like my projects, give them a star!** ⭐
+</div>
